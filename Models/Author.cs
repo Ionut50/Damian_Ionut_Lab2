@@ -6,12 +6,20 @@ namespace Damian_Ionut_Lab2.Models
     {
         public int ID { get; set; }
 
-        [Display(Name = "AuthorFirst Name")]
+  
         public string FirstName { get; set; }
 
-        [Display(Name = "AuthorLast Name")]
+      
         public string LastName { get; set; }
 
         public ICollection<Book>? Books { get; set; }
+        [Display(Name = "Author")]
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
     }
 }
