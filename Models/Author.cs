@@ -18,7 +18,7 @@ namespace Damian_Ionut_Lab2.Models
         {
             get
             {
-                return $"{FirstName} {LastName}";
+                return FirstName+ " " + LastName;
             }
         }
     }
